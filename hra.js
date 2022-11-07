@@ -1,3 +1,5 @@
+const audio = new Audio("zvuk.mp3");
+const buttons = document.querySelectorAll("img");
 var clicks = 0;
 var prumer1 = 0;
 var seconds = 0;
@@ -21,7 +23,11 @@ function pocitaniCasu (){
     casovac.innerText = seconds + " " + "sekund";
 }
 
-
+buttons.forEach(btn_test => {
+    btn_test.addEventListener("click", () => {
+      audio.play();
+    });
+  });
 
     
     button1.addEventListener('click',function(){
