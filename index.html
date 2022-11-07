@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Aim trainer</title>
+    <h1>Aim trainer</h1>
+    <h3>Vyzkoušejte kliknout na terč co nejvícekrát za 30s</h3>
+    
+    <button id="button1">Začni hrát</button>
+    <button id="pravidla" onclick="myFunction()">Pravidla</button>
+
+    <img src="img/terč.png" id="btn_test" style="display:none;" onClick="onClick()">
+    
+    <div id="vepisPravidla" ></div>
+    <h2>Čas: <a id="seconds-counter">0</a></h2>
+    <h2>Počet kliků: <a id="clicks">0</a></h2>
+    <h2>Počet kliků za sekundu: <a id="cps">0</a></h2>
+    
+    <script src="hra.js"></script>
+    <script>
+        function myFunction(){
+            document.getElementById("vepisPravidla").innerHTML = "Pravidla: 1) Obtížnost si určuje každý sám, podle toho na jak velké stránce hraje <br> </br> 2) Hra má nesmírně mnoho nevychytaných mušek, díky kterým jde podvádět, proto bych byl rád, aby jste se alespoň pokusili hrát čestně";
+        }
+    </script>
+</body>
+</html>
